@@ -71,14 +71,14 @@ contract PaymentSplitter is Context {
     }
 
     /**
-     * @dev Getter for the total amount of Ether already released.
+       the total amount of Ether already released.
      */
     function totalReleased() public view returns (uint256) {
         return _totalReleased;
     }
 
     /**
-     * @dev Getter for the total amount of `token` already released. `token` should be the address of an IERC20
+     *  the total amount of `token` already released. `token` should be the address of an IERC20
      * contract.
      */
     function totalReleased(IERC20 token) public view returns (uint256) {
@@ -86,21 +86,21 @@ contract PaymentSplitter is Context {
     }
 
     /**
-     * @dev Getter for the amount of shares held by an account.
+      the amount of shares held by an account.
      */
     function shares(address account) public view returns (uint256) {
         return _shares[account];
     }
 
     /**
-     * @dev Getter for the amount of Ether already released to a payee.
+      the amount of Ether already released to a payee.
      */
     function released(address account) public view returns (uint256) {
         return _released[account];
     }
 
     /**
-     * @dev Getter for the amount of `token` tokens already released to a payee. `token` should be the address of an
+      the amount of `token` tokens already released to a payee. `token` should be the address of an
      * IERC20 contract.
      */
     function released(IERC20 token, address account) public view returns (uint256) {
@@ -108,14 +108,14 @@ contract PaymentSplitter is Context {
     }
 
     /**
-     * @dev Getter for the address of the payee number `index`.
+    the address of the payee number `index`.
      */
     function payee(uint256 index) public view returns (address) {
         return _payees[index];
     }
 
     /**
-     * @dev Getter for the amount of payee's releasable Ether.
+      the amount of payee's releasable Ether.
      */
     function releasable(address account) public view returns (uint256) 
     {
